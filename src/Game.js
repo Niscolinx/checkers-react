@@ -316,7 +316,6 @@ export class Game extends React.Component {
             <Router history={browserHistory} basename={'react-checkers'} >
                 <div className="reactCheckers">
                     <div className="game-status">
-                        
                         {gameStatus}
                     </div>
                     <div className="game-board">
