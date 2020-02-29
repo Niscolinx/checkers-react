@@ -3,6 +3,7 @@ import * as utils from './utils.js';
 
 function Square(props) {
 
+    console.log(props)
     const squareClasses = props['squareClasses'];
     const onClick = props['onClick'];
 
