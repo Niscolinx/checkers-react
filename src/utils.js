@@ -1,5 +1,5 @@
 export function isOdd(n) {
-    const input = Math.floor(Math.random() * 2000
+    const input = Math.floor(Math.random() 
     return Math.abs(n % 2) === 1;
 }
 
