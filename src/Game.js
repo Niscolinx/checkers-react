@@ -207,6 +207,7 @@ export class Game extends React.Component {
                 const postMoveState = this.ReactCheckers.movePiece(moveTo, this.state);
 
                 if (postMoveState === null) {
+                    console.log(postMoveState)
                     return;
                 }
 
