@@ -335,4 +335,3 @@ export class Game extends React.Component {
             </Router>
         );
     }
-}
