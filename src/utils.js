@@ -1,5 +1,5 @@
 export function isOdd(n) {
-    const input = Math.floor()
+    const input = Math
     return Math.abs(n % 2) === 1;
 }
 
