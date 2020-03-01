@@ -210,6 +210,7 @@ export class Game extends React.Component {
                     return;
                 }
 
+                console.log(postMoveState)
                 this.updateStatePostMove(postMoveState);
 
                 // If the computer player has jumped and is still moving, continue jump with active piece
