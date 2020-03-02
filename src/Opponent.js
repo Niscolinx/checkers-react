@@ -42,7 +42,7 @@ export class Opponent extends ReactCheckers {
         for (let m = 0; m < moveKeys.length ; ++m) {
             const piece = moveKeys[m];
             
-            console.log(moveKeys)
+            console.log(piece)
             const movesData = computerMoves[piece][0];
             const jumpKills = computerMoves[piece][1];
 
