@@ -98,7 +98,6 @@ export class Game extends React.Component {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
 
         console.log(history)
-        console.log(history)
         return history[history.length - 1];
     }
 
