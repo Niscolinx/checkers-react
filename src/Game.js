@@ -99,7 +99,6 @@ export class Game extends React.Component {
 
         console.log(history)
         console.log(history)
-        console.log(history)
         return history[history.length - 1];
     }
 
