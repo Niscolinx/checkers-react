@@ -9,7 +9,6 @@ export class ReactCheckers {
     console.log(this.columns)
     console.log(this.columns)
     console.log(this.columns)
-    console.log(this.columns)
     getCorners(coordinates) {
 
         const col = utils.getColAsInt(this.columns, coordinates);
