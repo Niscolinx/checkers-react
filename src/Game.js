@@ -1,10 +1,10 @@
 import React from 'react';
-import {returnPlayerName} from './utils.js';
-import {ReactCheckers} from './ReactCheckers.js';
+import { returnPlayerName } from './utils.js';
+import { ReactCheckers } from './ReactCheckers.js';
 import Board from './Board.js';
 import { Router } from 'react-router-dom'
 import createBrowserHistory from 'history/createBrowserHistory'
-import {Opponent} from './Opponent.js';
+import { Opponent } from './Opponent.js';
 
 const browserHistory = createBrowserHistory();
 
@@ -42,7 +42,6 @@ export class Game extends React.Component {
         columns.e = 4;
         columns.f = 5;
         columns.g = 6;
-        columns.h = 7;
 
         return columns;
     }
@@ -54,7 +53,7 @@ export class Game extends React.Component {
         for (let key in this.columns) {
 
             if (this.columns.hasOwnProperty(key)) {
-                for (let n = 1; n <= 8 ; ++n) {
+                for (let n = 1; n <= 8; ++n) {
 
                     let row = key + n;
                     board[row] = null;
@@ -87,9 +86,9 @@ export class Game extends React.Component {
     createPiece(location, player) {
         let piece = {};
 
-        piece.player   = player;
+        piece.player = player;
         piece.location = location;
-        piece.isKing   = false;
+        piece.isKing = false;
 
         return piece;
     }
@@ -171,7 +170,7 @@ export class Game extends React.Component {
             return;
         }
 
-        setTimeout(()=> {
+        setTimeout(() => {
             const currentState = this.getCurrentState();
             const boardState = currentState.boardState;
 
@@ -183,14 +182,14 @@ export class Game extends React.Component {
             if (piece === null) {
                 //computerMove = this.Opponent.getRandomMove(boardState, 'player2');
                 computerMove = this.Opponent.getSmartMove(this.state, boardState, 'player2');
-                
+
                 coordinates = computerMove.piece;
                 moveTo = computerMove.moveTo;
             } else {
                 // Prevent the computer player from choosing another piece to move. It must move the active piece
                 computerMove = this.ReactCheckers.getMoves(boardState, piece, boardState[piece].isKing, true);
                 coordinates = piece;
-                moveTo = computerMove[0][Math.floor(Math.random()*computerMove[0].length)];
+                moveTo = computerMove[0][Math.floor(Math.random() * computerMove[0].length)];
             }
 
             const clickedSquare = boardState[coordinates];
@@ -203,7 +202,7 @@ export class Game extends React.Component {
                 jumpKills: movesData[1],
             });
 
-            setTimeout(()=> {
+            setTimeout(() => {
                 const postMoveState = this.ReactCheckers.movePiece(moveTo, this.state);
 
                 if (postMoveState === null) {
@@ -211,16 +210,16 @@ export class Game extends React.Component {
                 }
 
                 this.updateStatePostMove(postMoveState);
-                
+
                 // If the computer player has jumped and is still moving, continue jump with active piece
-                
+
                 if (postMoveState.currentPlayer === false) {
                     this.computerTurn(postMoveState.activePiece);
                 }
             },
-            500);
+                500);
         },
-        1000);
+            1000);
     }
 
     updateStatePostMove(postMoveState) {
@@ -239,11 +238,11 @@ export class Game extends React.Component {
     }
 
     undo() {
-        const backStep = parseInt(this.state.stepNumber, 10) -1;
+        const backStep = parseInt(this.state.stepNumber, 10) - 1;
         if (backStep < 0) {
             return;
         }
-        const unsetHistory = this.state.history.slice(0, backStep+1);
+        const unsetHistory = this.state.history.slice(0, backStep + 1);
         this.setState({
             history: unsetHistory,
             activePiece: null,
@@ -270,7 +269,7 @@ export class Game extends React.Component {
         const currentPlayer = currentState.currentPlayer;
         const moves = this.state.moves;
 
-//        console.log(this.state);
+        //        console.log(this.state);
 
         let gameStatus;
 
@@ -299,21 +298,21 @@ export class Game extends React.Component {
         }
 
         if (this.state.players === null) {
-            return(
+            return (
                 <Router history={browserHistory} basename={'react-checkers'} >
                     <div className="players-select">
                         <div className="players">
-                            <div className="one-player" onClick={()=> this.setPlayers(1) }>One Player</div>
+                            <div className="one-player" onClick={() => this.setPlayers(1)}>One Player</div>
                         </div>
                         <div className="players">
-                            <div className="two-player" onClick={()=> this.setPlayers(2) }>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
                         </div>
                     </div>
                 </Router>
             )
         }
 
-        return(
+        return (
             <Router history={browserHistory} basename={'react-checkers'} >
                 <div className="reactCheckers">
                     <div className="game-status">
@@ -321,18 +320,19 @@ export class Game extends React.Component {
                     </div>
                     <div className="game-board">
                         <Board
-                            boardState = {boardState}
-                            currentPlayer = {currentPlayer}
-                            activePiece = {activePiece}
-                            moves = {moves}
-                            columns = {columns}
-                            onClick = {(coordinates) => this.handleClick(coordinates)}
+                            boardState={boardState}
+                            currentPlayer={currentPlayer}
+                            activePiece={activePiece}
+                            moves={moves}
+                            columns={columns}
+                            onClick={(coordinates) => this.handleClick(coordinates)}
                         />
                     </div>
                     <div className="time-travel">
-                        <button className={undoClass} onClick={()=>this.undo()}>Undo</button>
+                        <button className={undoClass} onClick={() => this.undo()}>Undo</button>
                     </div>
                 </div>
             </Router>
         );
     }
+}
