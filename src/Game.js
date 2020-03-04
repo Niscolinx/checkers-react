@@ -58,7 +58,7 @@ export class Game extends React.Component {
 
                     let row = key + n;
 
-                    console.log(row)
+                    console.log('this is the row', row)
                     board[row] = null;
                 }
             }
