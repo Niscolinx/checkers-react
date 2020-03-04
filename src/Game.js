@@ -60,6 +60,8 @@ export class Game extends React.Component {
 
                     console.log('this is the row', row)
                     board[row] = null;
+
+                    console.log(board)
                 }
             }
         }
