@@ -51,14 +51,14 @@ export class Game extends React.Component {
 
         let board = {};
 
-        console.log(this.columns)
-
         for (let key in this.columns) {
 
             if (this.columns.hasOwnProperty(key)) {
                 for (let n = 1; n <= 8; ++n) {
 
                     let row = key + n;
+
+                    console.log(row)
                     board[row] = null;
                 }
             }
