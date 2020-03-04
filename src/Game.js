@@ -42,6 +42,7 @@ export class Game extends React.Component {
         columns.e = 4;
         columns.f = 5;
         columns.g = 6;
+        columns.h = 7;
 
         return columns;
     }
@@ -49,6 +50,8 @@ export class Game extends React.Component {
     createBoard() {
 
         let board = {};
+
+        console.log(this.columns)
 
         for (let key in this.columns) {
 
