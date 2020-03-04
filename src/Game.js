@@ -101,7 +101,7 @@ export class Game extends React.Component {
     getCurrentState() {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
 
-        console.log(history)
+        console.log('This is the history', history)
         return history[history.length - 1];
     }
 
