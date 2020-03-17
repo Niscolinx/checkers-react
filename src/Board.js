@@ -3,9 +3,10 @@ import * as utils from './utils.js';
 
 function Square(props) {
 
-    console.log(props)
     const squareClasses = props['squareClasses'];
     const onClick = props['onClick'];
+   // console.log('this is the onclick', onClick)
+   // console.log('this is the props', props)
 
     return (
         <button className = { "square " + (squareClasses) } onClick={onClick} />
