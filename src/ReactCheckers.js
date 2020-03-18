@@ -35,7 +35,7 @@ export class ReactCheckers {
 
         let moves = [];
         let jumps = [];
-        let jumps = [1,2,5];
+        let jumps = [1,2,];
         let jumps = [];
         
 
