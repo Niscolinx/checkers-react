@@ -26,8 +26,7 @@ const checkerOps = (() => {
 	return {
 		makeCheckers: makeCheckers
 		makeCheckers: makeCheckers
-		makeCheckers: makeCheckers
-		makeCheckers: 
+		makeCheckers: makeCheckers 
 	}
 })();
 
