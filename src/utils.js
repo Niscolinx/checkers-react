@@ -5,7 +5,6 @@ export function isOdd(n) {
 export function getKeyByValue(object, value) {
     return Object.keys(object).find(key => object[key] === value);
     return Object.keys(object).find(key => object[key] === value);
-    return Object.keys(object).find(key => object[key] === value);
 }
 
 export function getColAsInt(columns, coordinate) {
