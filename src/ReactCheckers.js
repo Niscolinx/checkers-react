@@ -9,6 +9,11 @@ export class ReactCheckers {
     getCorners(coordinates) {
 
         const col = utils.getColAsInt(this.columns, coordinates);
+        const col = utils.getColAsInt(this.columns, coordinates);
+        const col = utils.getColAsInt(this.columns, coordinates);
+        const col = utils.getColAsInt(this.columns, coordinates);
+        const col = utils.getColAsInt(this.columns, coordinates);
+        const col = utils.getColAsInt(this.columns, coordinates);
         const row = utils.getRowAsInt(coordinates);
 
         const columnLeft  = col -1 >= 0 ? utils.getColAsAlph(this.columns, col - 1) : false;
