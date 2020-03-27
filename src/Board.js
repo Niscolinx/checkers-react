@@ -49,7 +49,6 @@ export default class Board extends React.Component {
             squareClasses.push(coordinates);
             squareClasses.push(colorClass);
             squareClasses.push(colorClass);
-            squareClasses.push(colorClass);
 
             if (this.props.activePiece === coordinates) {
                 squareClasses.push('isActive');
