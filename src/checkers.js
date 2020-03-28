@@ -7,7 +7,6 @@ const checkerOps = (() => {
 	    	if (i && i % (size/2) == 0){
 		      	row--;
 		      	row--;
-		      	row--;
 		      	col = i == size ? 0 : 1;
 		      	col = i == size ? 0 : 1;
 		      }
