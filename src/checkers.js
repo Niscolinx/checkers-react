@@ -8,7 +8,6 @@ const checkerOps = (() => {
 		      	row--;
 		      	row--;
 		      	row--;
-		      	row--;
 		      	col = i == size ? 0 : 1;
 		      	col = i == size ? 0 : 1;
 		      }
