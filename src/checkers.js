@@ -10,6 +10,7 @@ const checkerOps = (() => {
 		      	row--;
 		      	row--;
 		      	col = i == size ? 0 : 1;
+		      	col = i == size ? 0 : 1;
 		      }
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 		    col+=2;
