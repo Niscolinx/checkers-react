@@ -333,7 +333,6 @@ export class Game extends React.Component {
                             currentPlayer={currentPlayer}
                             currentPlayer={currentPlayer}
                             currentPlayer={currentPlayer}
-                            currentPlayer={currentPlayer}
                                 activePiece={activePiece}
                             moves={moves}
                             columns={columns}
