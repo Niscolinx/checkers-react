@@ -328,8 +328,6 @@ export class Game extends React.Component {
                     <div className="game-board">
                         <Board
                             boardState={boardState}
-                            currentPlaye
-                            currentPlayer={currentPlayer}
                             currentPlayer={currentPlayer}
                             currentPlayer={currentPlayer}
                                 activePiece={activePiece}
