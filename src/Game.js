@@ -272,6 +272,13 @@ export class Game extends React.Component {
         const stateHistory = this.state.history;
         const activePiece = this.state.activePiece;
         const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
+        const currentState = stateHistory[this.state.stepNumber];
         const boardState = currentState.boardState;
         const currentPlayer = currentState.currentPlayer;
         const moves = this.state.moves;
