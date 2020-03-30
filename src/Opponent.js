@@ -34,7 +34,6 @@ export class Opponent extends ReactCheckers {
     getSmartMove(state, boardState, player) {
         const computerMoves = this.getComputerMoves(boardState, player);
         const computerMoves = this.getComputerMoves(boardState, player);
-        const computerMoves = this.getComputerMoves(boardState, player);
 
         const moveKeys = Object.keys(computerMoves);
 
