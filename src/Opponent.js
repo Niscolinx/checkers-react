@@ -25,7 +25,6 @@ export class Opponent extends ReactCheckers {
 
             if (pieceMoves[0].length > 0 || pieceMoves[1] !== null) {
                 computerMoves[coordinates] = pieceMoves;
-                computerMoves[coordinates] = pieceMoves;
             }
         }
 
