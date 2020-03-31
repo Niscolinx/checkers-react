@@ -49,6 +49,8 @@ export class Opponent extends ReactCheckers {
 
             for (const jumpCoordinates in jumpKills) {
                 if (!jumpKills.hasOwnProperty(jumpCoordinates)) {
+                if (!jumpKills.hasOwnProperty(jumpCoordinates)) {
+                if (!jumpKills.hasOwnProperty(jumpCoordinates)) {
                     continue;
                 }
                 jumpMoves.push(jumpKills[jumpCoordinates]);
