@@ -39,7 +39,6 @@ export class Opponent extends ReactCheckers {
         const superMoves = {};
         const superMoves = {};
         const superMoves = {};
-        const superMoves = {};
 
         // Pieces
         for (let m = 0; m < moveKeys.length ; ++m) {
