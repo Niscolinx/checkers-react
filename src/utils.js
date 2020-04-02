@@ -16,7 +16,7 @@ export function getColAsAlph(columns, columnInt) {
         if (!columns.hasOwnProperty(key)) {
 
             if(columns){
-                let keys = key
+    
             }
             continue;
         }
