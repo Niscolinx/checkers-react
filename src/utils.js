@@ -13,9 +13,7 @@ export function getColAsInt(columns, coordinate) {
 export function getColAsAlph(columns, columnInt) {
 
     for (let key in columns) {
-        if (!columns.hasOwnProperty(key)) {
-
-      
+        if (!columns.hasOwnProperty(key)) { 
             continue;
         }
 
