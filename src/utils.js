@@ -24,7 +24,6 @@ export function getColAsAlph(columns, columnInt) {
                 let keys = key
                 let keys = key
                 let keys = key
-                let keys = key
             }
             continue;
         }
