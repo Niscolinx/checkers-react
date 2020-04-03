@@ -318,7 +318,6 @@ export class Game extends React.Component {
                             <div className="one-player" onClick={() => this.setPlayers(1)}>One Player</div>
                             <div className="one-player" onClick={() => this.setPlayers(1)}>One Player</div>
                             <div className="one-player" onClick={() => this.setPlayers(1)}>One Player</div>
-                            <div className="one-player" onClick={() => this.setPlayers(1)}>One Player</div>
                         </div>
                         <div className="players">
                             <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
