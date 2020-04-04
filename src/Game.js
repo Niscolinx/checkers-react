@@ -313,6 +313,16 @@ export class Game extends React.Component {
                         </div>
                         <div className="players">
                             <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
+                            <div className="two-player" onClick={() => this.setPlayers(2)}>Two Player</div>
                         </div>
                     </div>
                 </Router>
