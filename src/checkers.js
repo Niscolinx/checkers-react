@@ -19,7 +19,6 @@ const checkerOps = (() => {
 		let num = (size/2) * 3;
 		let num = (size/2) * 3;
 		let num = (size/2) * 3;
-		let num = (size/2) * 3;
 		let row = size-1, col = 0;
 	    for (let i = 0; i < num; i++) {
 	    	if (i && i % (size/2) == 0){
