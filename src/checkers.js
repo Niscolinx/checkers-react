@@ -8,7 +8,6 @@ const checkerOps = (() => {
 	    for (let i = 0; i < num; i++) {
 	    for (let i = 0; i < num; i++) {
 	    for (let i = 0; i < num; i++) {
-	    for (let i = 0; i < num; i++) {
 	    	if (i && i % (size/2) == 0){
 		      	row--;
 		      	col = i == size ? 0 : 1;
