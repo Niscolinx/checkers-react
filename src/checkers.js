@@ -22,7 +22,6 @@ const checkerOps = (() => {
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
-		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 \		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
 		    checkers.push({player: playerOne, isKing: false, row: row, col: col});
